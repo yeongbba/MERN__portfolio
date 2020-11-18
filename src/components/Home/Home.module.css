@@ -1,0 +1,80 @@
+@value makerBlue from  '../../common/colors.css';
+@value makerPurple from  '../../common/colors.css';
+@value makerWhite from  '../../common/colors.css';
+@value makerOrange from  '../../common/colors.css';
+@value makerLightBlue from  '../../common/colors.css';
+@value makerBlack from  '../../common/colors.css';
+
+.background {
+  background-color: #1e1e1c;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  background-color: #1e1e1c;
+}
+
+.line1 {
+  font-size: 2rem;
+}
+
+.line2 {
+  font-size: 1.8rem;
+  padding-left: 2.5rem;
+  margin-top: 1rem;
+}
+
+.line3 {
+  font-size: 1.8rem;
+  padding-left: 2.5rem;
+  margin-top: 0.3rem;
+}
+
+.line4 {
+  font-size: 1.8rem;
+  padding-left: 2.5rem;
+  margin-top: 0.3rem;
+}
+
+.line5 {
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+
+.purple {
+  color: makerPurple;
+}
+
+.blue {
+  color: makerBlue;
+}
+
+.orange {
+  color: makerOrange;
+}
+
+.white {
+  color: makerWhite;
+}
+
+.lightblue {
+  color: makerLightBlue;
+}
+
+.button {
+  background-color: white;
+  color: makerBlack;
+  width: 16rem;
+  height: 50px;
+  margin-top: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 1.5rem;
+}

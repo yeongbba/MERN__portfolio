@@ -1,0 +1,16 @@
+@value makerGrey from  './common/colors.css';
+
+* {
+  box-sizing: border-box;
+}
+
+.app {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./wes-hicks-4-EeTnaC1S4-unsplash.jpg);
+  background-size: 100%;
+}
