@@ -1,0 +1,47 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 0 10rem;
+  box-sizing: border-box;
+}
+
+.content1 {
+  display: flex;
+  margin-left: 7rem;
+  position: relative;
+}
+
+.content1__text {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 40rem;
+  left: 16rem;
+}
+
+.content1__text p {
+  width: 70%;
+}
+
+.content2 {
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 3rem 5rem 0 0;
+  position: relative;
+}
+
+.content2__text {
+  display: flex;
+  flex-direction: column;
+  width: 40rem;
+  position: absolute;
+  right: 5rem;
+}
+
+.content2__text p {
+  width: 70%;
+}
