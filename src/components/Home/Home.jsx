@@ -1,50 +1,60 @@
 import React from "react";
 import styles from "./Home.module.css";
+import FirstLine from "./FirstLine/FirstLine";
+import LastLine from "./LastLine/LastLine";
+import CommonLine from "./CommonLine/CommonLine";
+import { firstData, secondData, thirdData } from "./data/data";
 
-const Home = () => (
-  <React.Fragment>
+const Home = () => {
+  const renderCommonLine = (commonLineData) =>
+    commonLineData.map((data, key) => <CommonLine {...data} key={key} />);
+
+  return (
     <div className={styles.background}>
       <div className={styles.box}>
-        <div className={styles.line1}>
-          <span className={styles.purple}>function</span>
-          <span className={styles.blue}> yeongMo</span>
-          <span className={styles.orange}> (</span>
-          <span className={styles.white}>responsibility, communication</span>
-          <span className={styles.orange}>)</span>
-          <span className={styles.purple}> &#123;</span>
+        <div className={styles.describe}>
+          <FirstLine
+            functionName={"describe"}
+            title={"Yeong Mo LEE, DEVELOPER UNIT TEST"}
+          />
+        </div>
+        <div className={styles.it}>
+          <FirstLine functionName={"it"} title={"Frontend to Backend"} />
+        </div>
+        <div className={styles.expect}>{renderCommonLine(firstData)}</div>
+        <div className={styles.it}>
+          <LastLine name={"it"} />
         </div>
 
-        <div className={styles.line2}>
-          <span className={styles.blue}>WorkedAsMarketer</span>
-          <span className={styles.lightblue}> (</span>
-          <span className={styles.white}>responsibility, communication</span>
-          <span className={styles.lightblue}>)</span>
-          <span className={styles.white}>;</span>
+        <div className={styles.it}>
+          <FirstLine
+            functionName={"it"}
+            title={"Role in the two group projects"}
+          />
+        </div>
+        <div className={styles.expect}>{renderCommonLine(secondData)}</div>
+        <div className={styles.it}>
+          <LastLine name={"it"} />
         </div>
 
-        <div className={styles.line3}>
-          <span className={styles.blue}>GroupProjects</span>
-          <span className={styles.lightblue}> (</span>
-          <span className={styles.white}>responsibility, communication</span>
-          <span className={styles.lightblue}>)</span>
-          <span className={styles.white}>;</span>
+        <div className={styles.it}>
+          <FirstLine functionName={"it"} title={"Behavior & Ability"} />
         </div>
-
-        <div className={styles.line4}>
-          <span className={styles.blue}>SoloProjects</span>
-          <span className={styles.lightblue}> (</span>
-          <span className={styles.lightblue}> )</span>
-          <span className={styles.white}>;</span>
+        <div className={styles.expect}>{renderCommonLine(thirdData)}</div>
+        <div className={styles.it}>
+          <LastLine name={"it"} />
         </div>
-
-        <div className={styles.line5}>
-          <span className={styles.purple}>&#125;</span>
+        <div className={styles.describe}>
+          <LastLine name={"describe"} />
         </div>
       </div>
-
-      <div className={styles.button}>PORTFOLIO START</div>
+      <div className={styles.box2}>
+        <div className={styles.message}>Click Button or Press Enter</div>
+        <div className={styles.message}>to see Yeong Mo's Portfolio</div>
+        <div className={styles.button}>YARN TEST</div>
+      </div>
     </div>
-  </React.Fragment>
-);
+  );
+};
 
 export default Home;

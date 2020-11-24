@@ -1,0 +1,24 @@
+@value makerOrange from  '../../../common/colors.css';
+@value makerWhite from  '../../../common/colors.css';
+@value makerPurple from  '../../../common/colors.css';
+@value makerLightBlue from  '../../../common/colors.css';
+
+.lastLine {
+  font-size: 1.2rem;
+}
+
+.orange {
+  color: makerOrange;
+}
+
+.white {
+  color: makerWhite;
+}
+
+.purple {
+  color: makerPurple;
+}
+
+.lightblue {
+  color: makerLightBlue;
+}

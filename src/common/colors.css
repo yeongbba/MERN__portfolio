@@ -4,7 +4,7 @@
 @value makerLightPink: #ffeae8;
 @value makerGrey: #626262;
 @value makerGreen: #385461;
-@value makerBlue: #1357BE;
+@value makerBlue: #6495ED;
 @value makerLightBlue: #7EC0EE;
 @value makerPurple: #945cb4;
 @value makerOrange: orange;
@@ -12,3 +12,5 @@
 @value makerShadow: rgba(217, 217, 217, 1);
 @value makerColorful: linear-gradient(166deg, rgba(237, 193, 211, 1) 0%,rgba(212, 149, 161, 1) 60%, rgba(162, 63, 63, 1) 100%, rgba(127, 188, 242, 1) 100%);
 @value makerWheat: wheat;
+@value makerYellow: #C5E384;
+@value makerLightPurple: #b19cd9;
