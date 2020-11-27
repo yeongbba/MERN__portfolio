@@ -1,16 +1,18 @@
 import React from "react";
 import { Image, Transformation } from "cloudinary-react";
+import styles from "./Github.module.css";
 
 function Gitub() {
   return (
-    <div>
+    <div className={styles.github}>
       <a href="https://github.com/yeongbba" target="_blank">
         <Image
           cloudName="dpgnpcuzq"
-          publicId="git.png"
-          width="55"
-          heigth="55"
-          crop="scale"
+          publicId="GitHub-Mark_is0p5w"
+          width="50"
+          heigth="50"
+          crop="fill"
+          style={{ borderRadius: "50%" }}
         >
           <Transformation radius="max" />
         </Image>

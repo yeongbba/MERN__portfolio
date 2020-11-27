@@ -3,6 +3,8 @@ import styles from "./Home.module.css";
 import FirstLine from "./FirstLine/FirstLine";
 import LastLine from "./LastLine/LastLine";
 import CommonLine from "./CommonLine/CommonLine";
+import Terminal from "./Terminal/Terminal";
+import StartButton from "./StartButton/StartButton";
 import { firstData, secondData, thirdData } from "./data/data";
 
 const Home = () => {
@@ -49,9 +51,12 @@ const Home = () => {
         </div>
       </div>
       <div className={styles.box2}>
-        <div className={styles.message}>Click Button or Press Enter</div>
-        <div className={styles.message}>to see Yeong Mo's Portfolio</div>
-        <div className={styles.button}>YARN TEST</div>
+        <div className={styles.terminal}>
+          <Terminal />
+        </div>
+        <div className={styles.startButton}>
+          <StartButton />
+        </div>
       </div>
     </div>
   );

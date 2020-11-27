@@ -1,14 +1,13 @@
-import React, { useState, useEffect } from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import React from "react";
 import Start from "./components/Start/Start";
 import Home from "./components/Home/Home";
 import Introduction from "./components/Introduction/Introduction";
 import WorkedAsAE from "./components/WorkedAsAE/WorkedAsAE";
 import SoloProjects from "./components/SoloProjects/SoloProjects";
 import styles from "./app.module.css";
-import Blog from "./utils/Blog";
-import Github from "./utils/Github";
-import Email from "./utils/Email";
+import Buttons from "./utils/Buttons/Buttons";
+import Nav from "./utils/Nav/Nav";
+import { MenuOutlined } from "@ant-design/icons";
 
 class App extends React.Component {
   // state = {
@@ -23,9 +22,17 @@ class App extends React.Component {
   render() {
     return (
       <div className={styles.app}>
-        <Github />
-        <Blog />
-        <Email />
+        <Home />
+        <div className={styles.menu}>
+          <MenuOutlined />
+        </div>
+        <div className={styles.nav}>
+          <Nav />
+        </div>
+        <div className={styles.buttons}>
+          <Buttons />
+        </div>
+
         {/* <button onClick={this.clickHandler}>button</button>
         {this.state.page === 0 && <Start />}
         {this.state.page === 1 && <Introduction />}
