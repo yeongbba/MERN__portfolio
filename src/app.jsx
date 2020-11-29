@@ -9,6 +9,8 @@ import Buttons from "./utils/Buttons/Buttons";
 import Nav from "./utils/Nav/Nav";
 import { MenuOutlined } from "@ant-design/icons";
 
+import FirstPage from "./components/FirstPage/FirstPage";
+
 class App extends React.Component {
   // state = {
   //   page: 0,
@@ -22,7 +24,8 @@ class App extends React.Component {
   render() {
     return (
       <div className={styles.app}>
-        <Home />
+        <FirstPage />
+        {/* <Home />
         <div className={styles.menu}>
           <MenuOutlined />
         </div>
@@ -31,7 +34,7 @@ class App extends React.Component {
         </div>
         <div className={styles.buttons}>
           <Buttons />
-        </div>
+        </div> */}
 
         {/* <button onClick={this.clickHandler}>button</button>
         {this.state.page === 0 && <Start />}

@@ -1,0 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@500&display=swap");
+
+@font-face {
+  font-family: Gotham_Ultra;
+  src: url("../fonts/iCiel_Ultra.ttf");
+}
+
+@value Gotham_Ultra: Gotham_Ultra;
+@value Maven_Pro: 'Maven Pro', sans-serif; ;

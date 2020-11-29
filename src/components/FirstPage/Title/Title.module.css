@@ -1,0 +1,19 @@
+@value makerWhite from  '../../../common/colors.css';
+@value makerBlack from  '../../../common/colors.css';
+@value Gotham_Ultra from '../../../common/fonts.css';
+/* @font-face {
+  font-family: Gotham;
+  src: url("./Gotham-UltraItalic.otf") format("woff");
+} */
+
+.title {
+  font-family: Gotham_Ultra;
+  font-size: 4vw;
+  color: makerWhite;
+  background-color: makerBlack;
+  width: 100%;
+  height: 63%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

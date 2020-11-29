@@ -1,0 +1,23 @@
+@value makerWhite from  '../../../common/colors.css';
+@value makerBlack from  '../../../common/colors.css';
+@value Maven_Pro from  '../../../common/fonts.css';
+
+.btn {
+  width: 50%;
+  height: 22%;
+  font-family: Maven_Pro;
+  font-size: 1.38vw;
+  font-weight: 600;
+  color: makerBlack;
+  border: 0.8px solid makerBlack;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: makerBlack;
+  color: white;
+  transition: 0.5s ease-in;
+}
