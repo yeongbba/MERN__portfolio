@@ -1,22 +1,84 @@
+@value makerWhite from  '../../common/colors.css';
+@value makerBlack from  '../../common/colors.css';
+@value Gotham_Ultra from '../../common/fonts.css';
+@value Maven_Pro from  '../../common/fonts.css';
+
 .container {
+  width: 100vw;
+  height: 100vh;
   position: relative;
 }
 
 .bgImg {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   overflow: hidden;
 }
 
-.title {
-  width: 38%;
-  height: 36%;
+.content {
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  position: absolute;
   top: 50%;
   left: 50%;
+  position: absolute;
   transform: translate(-50%, -50%);
+}
+
+.title {
+  width: 40%;
+  height: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Gotham_Ultra;
+  font-size: 4vw;
+  color: makerWhite;
+  background-color: makerBlack;
+  z-index: 1;
+}
+
+.btn {
+  width: 18%;
+  height: 8%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6vh;
+  font-family: Maven_Pro;
+  font-size: 1.38vw;
+  font-weight: 600;
+  letter-spacing: 0.1vw;
+  color: makerBlack;
+  border: 0.5px solid makerBlack;
+  z-index: 3;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: makerBlack;
+  color: white;
+  transition: 0.5s ease-in-out;
+}
+
+.blackBG {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: black;
+  opacity: 0.6;
+  transition: 0.5s ease-in;
+  z-index: 2;
+}
+
+.transparentBG {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: transparent;
+  transition: 0.5s ease-in;
+  z-index: 2;
 }

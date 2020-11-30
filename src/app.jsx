@@ -1,15 +1,10 @@
 import React from "react";
-import Start from "./components/Start/Start";
-import Home from "./components/Home/Home";
-import Introduction from "./components/Introduction/Introduction";
-import WorkedAsAE from "./components/WorkedAsAE/WorkedAsAE";
-import SoloProjects from "./components/SoloProjects/SoloProjects";
 import styles from "./app.module.css";
-import Buttons from "./utils/Buttons/Buttons";
 import Nav from "./utils/Nav/Nav";
 import { MenuOutlined } from "@ant-design/icons";
 
 import FirstPage from "./components/FirstPage/FirstPage";
+import SecondPage from "./components/SecondPage/SecondPage";
 
 class App extends React.Component {
   // state = {
@@ -24,7 +19,8 @@ class App extends React.Component {
   render() {
     return (
       <div className={styles.app}>
-        <FirstPage />
+        {/* <FirstPage /> */}
+        <SecondPage />
         {/* <Home />
         <div className={styles.menu}>
           <MenuOutlined />

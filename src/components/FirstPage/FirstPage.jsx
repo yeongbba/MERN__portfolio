@@ -1,10 +1,21 @@
-import React from "react";
-import Title from "./Title/Title";
-import Button from "./Button/Button";
-import styles from "./FirstPage.module.css";
-import { Image, Transformation } from "cloudinary-react";
+import React, { useState } from "react";
+import { Image } from "cloudinary-react";
 
-function FirstPage() {
+import Title from "./Sections/Title/Title";
+import Button from "./Sections/Button/Button";
+import styles from "./FirstPage.module.css";
+
+const FirstPage = () => {
+  const [Background, setBackground] = useState(false);
+
+  const changeBlackBG = () => {
+    setBackground(true);
+  };
+
+  const changeTransparentBG = () => {
+    setBackground(false);
+  };
+
   return (
     <div className={styles.container}>
       <div className={styles.bgImg}>
@@ -16,12 +27,23 @@ function FirstPage() {
           style={{ width: "100%", height: "100%" }}
         ></Image>
       </div>
-      <div className={styles.title}>
-        <Title />
-        <Button />
+      <div className={styles.content}>
+        <div className={styles.title}>
+          <Title />
+        </div>
+        <div
+          className={styles.btn}
+          onMouseEnter={changeBlackBG}
+          onMouseLeave={changeTransparentBG}
+        >
+          <Button />
+        </div>
+        <div
+          className={Background ? styles.blackBG : styles.transparentBG}
+        ></div>
       </div>
     </div>
   );
-}
+};
 
 export default FirstPage;
