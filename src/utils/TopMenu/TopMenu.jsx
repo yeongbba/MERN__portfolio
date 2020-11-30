@@ -14,7 +14,9 @@ const TopMenu = () => {
       <div className={styles.rightMenu}>
         <Blog />
         <Github />
-        <Email />
+        <div className={styles.email}>
+          <Email />
+        </div>
       </div>
     </div>
   );

@@ -1,3 +1,4 @@
+/* Maven_Pro */
 @import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@500&display=swap");
 
 @font-face {
@@ -5,5 +6,17 @@
   src: url("../fonts/iCiel_Ultra.ttf");
 }
 
+@font-face {
+  font-family: Gotham_Medium;
+  src: url("../fonts/GothamMedium.ttf");
+}
+
+@font-face {
+  font-family: Multi_Colore;
+  src: url("../fonts/Multicolore.otf");
+}
+
 @value Gotham_Ultra: Gotham_Ultra;
-@value Maven_Pro: 'Maven Pro', sans-serif; ;
+@value Maven_Pro: 'Maven Pro', sans-serif;
+@value Gotham_Medium: Gotham_Medium;
+@value Multi_Colore: Multi_Colore;

@@ -2,14 +2,24 @@ import React from "react";
 import TestCode from "./Sections/TestCode/TestCode";
 import Text from "./Sections/Text/Text";
 import TopMenu from "../../utils/TopMenu/TopMenu";
-// import styles from "./SecondPage.module.css";
+import BottomMenu from "../../utils/BottomMenu/BottomMenu";
+import styles from "./SecondPage.module.css";
 
 const SecondPage = () => {
   return (
-    <div>
+    <div className={styles.container}>
       <TopMenu />
-      <TestCode />
-      <Text />
+
+      <div className={styles.content}>
+        <div className={styles.content__text}>
+          <Text />
+        </div>
+        <div className={styles.content__test}>
+          <TestCode />
+        </div>
+      </div>
+
+      <BottomMenu />
     </div>
   );
 };

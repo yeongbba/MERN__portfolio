@@ -1,21 +1,42 @@
+@value makerWhite from "../../common/colors.css";
+@value Multi_Colore from "../../common/fonts.css";
+
 .container {
   width: 100vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: absolute;
-  top: 0;
+  top: 5%;
   left: 0;
 }
 
 .rightMenu {
-  width: 10%;
+  width: 14%;
+  margin-right: 3%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: gray;
+  font-family: Multi_Colore;
+  font-size: 1.1vw;
+  color: makerWhite;
 }
 
 .rightMenu a {
-  color: black;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1.1vw;
+}
+
+.leftMenu {
+  margin-left: 3%;
+  color: makerWhite;
+  font-size: 2vw;
+}
+
+.leftMenu:hover {
+  cursor: pointer;
+}
+
+.email:hover {
+  cursor: pointer;
 }
