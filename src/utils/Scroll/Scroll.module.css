@@ -1,0 +1,38 @@
+@value makerWhite from "../../common/colors.css";
+@value Maven_Pro from "../../common/fonts.css";
+
+.container {
+  bottom: 3%;
+  left: 50%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(-50%);
+}
+
+.scroll__text {
+  font-family: Maven_Pro;
+  font-size: 1.2vw;
+  color: makerWhite;
+  margin-bottom: 5%;
+}
+
+.scroll__icon {
+  font-size: 1.2vw;
+  color: makerWhite;
+  animation: slideUp 1s linear infinite 0s;
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(15%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}

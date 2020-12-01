@@ -2,6 +2,7 @@ import React from "react";
 import TestCode from "./Sections/TestCode/TestCode";
 import Text from "./Sections/Text/Text";
 import TopMenu from "../../utils/TopMenu/TopMenu";
+import Scroll from "../../utils/Scroll/Scroll";
 import BottomMenu from "../../utils/BottomMenu/BottomMenu";
 import styles from "./SecondPage.module.css";
 
@@ -18,7 +19,7 @@ const SecondPage = () => {
           <TestCode />
         </div>
       </div>
-
+      <Scroll />
       <BottomMenu />
     </div>
   );

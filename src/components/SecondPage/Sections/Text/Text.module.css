@@ -1,0 +1,38 @@
+@value makerWhite from  '../../../../common/colors.css';
+@value makerGrey from  '../../../../common/colors.css';
+@value makerDeepBlue from  '../../../../common/colors.css';
+@value Gotham_Medium from  '../../../../common/fonts.css';
+@value Noto_Sans_KR from  '../../../../common/fonts.css';
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 30%;
+}
+
+.title {
+  font-family: Gotham_Medium;
+  font-size: 1.1vw;
+  color: makerGrey;
+  margin-bottom: 3.5%;
+}
+
+.line1,
+.line2 {
+  font-family: Noto_Sans_KR;
+  font-weight: 500;
+  font-size: 1.2vw;
+  color: makerWhite;
+  margin-bottom: 1%;
+}
+
+.line3 {
+  font-family: Noto_Sans_KR;
+  font-weight: 700;
+  font-size: 1.2vw;
+  color: makerDeepBlue;
+}
