@@ -1,0 +1,14 @@
+@value makerDeepBlue from  '../../common/colors.css';
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: makerDeepBlue;
+  position: relative;
+}
+
+.TYPESCRIPT {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}

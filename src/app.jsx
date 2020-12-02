@@ -5,6 +5,7 @@ import { MenuOutlined } from "@ant-design/icons";
 
 import FirstPage from "./components/FirstPage/FirstPage";
 import SecondPage from "./components/SecondPage/SecondPage";
+import ThirdPage from "./components/ThirdPage/ThirdPage";
 
 class App extends React.Component {
   // state = {
@@ -20,7 +21,8 @@ class App extends React.Component {
     return (
       <div className={styles.app}>
         {/* <FirstPage /> */}
-        <SecondPage />
+        {/* <SecondPage /> */}
+        <ThirdPage />
         {/* <Home />
         <div className={styles.menu}>
           <MenuOutlined />
