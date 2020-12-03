@@ -10,6 +10,11 @@
 }
 
 @font-face {
+  font-family: Gotham_Bold;
+  src: url("../fonts/GothamBold.ttf");
+}
+
+@font-face {
   font-family: Gotham_Medium;
   src: url("../fonts/GothamMedium.ttf");
 }
@@ -19,8 +24,15 @@
   src: url("../fonts/Multicolore.otf");
 }
 
+@font-face {
+  font-family: Kopub_Light;
+  src: url("../fonts/KoPubDotum_Pro_Light.otf");
+}
+
 @value Gotham_Ultra: Gotham_Ultra;
-@value Maven_Pro: 'Maven Pro', sans-serif;
+@value Gotham_Bold: Gotham_Bold;
 @value Gotham_Medium: Gotham_Medium;
+@value Maven_Pro: 'Maven Pro', sans-serif;
 @value Multi_Colore: Multi_Colore;
+@value Kopub_Light: Kopub_Light;
 @value Noto_Sans_KR: 'Noto Sans KR', sans-serif;
