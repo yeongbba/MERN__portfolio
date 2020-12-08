@@ -18,13 +18,13 @@ const ThirdPage = () => {
       id: "git",
       title1: "GIT ",
       title2: "FLOW",
-      text: "Git을 이용한 협업의 흐름",
+      text: "같이 일해도 문제없이, 협업 준비 끝!",
     },
     {
       id: "graphql",
       title1: "GRAPH",
       title2: "QL",
-      text: "원하는 데이터만 쏙쏙 골라 한 번의 요청으로 끝!",
+      text: "원하는 데이터만 쏙쏙 골라 최소한의 요청으로 끝!",
     },
     {
       id: "jest",

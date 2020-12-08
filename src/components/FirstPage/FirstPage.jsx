@@ -1,12 +1,17 @@
 import React, { useState } from "react";
 import { Image } from "cloudinary-react";
+import { useDispatch, useSelector } from "react-redux";
+import { increasePage } from "./../../_actions/page_actions";
 
 import Title from "./Sections/Title/Title";
 import Button from "./Sections/Button/Button";
 import styles from "./FirstPage.module.css";
 
 const FirstPage = () => {
+  const dispatch = useDispatch();
   const [Background, setBackground] = useState(false);
+  const state = useSelector((state) => state.page);
+  const page = state.page ? state.page : 1;
 
   const changeBlackBG = () => {
     setBackground(true);
@@ -14,6 +19,11 @@ const FirstPage = () => {
 
   const changeTransparentBG = () => {
     setBackground(false);
+  };
+
+  const onIncreaseHandler = (event) => {
+    event.preventDefault();
+    dispatch(increasePage(page));
   };
 
   return (
@@ -35,6 +45,7 @@ const FirstPage = () => {
           className={styles.btn}
           onMouseEnter={changeBlackBG}
           onMouseLeave={changeTransparentBG}
+          onClick={onIncreaseHandler}
         >
           <Button />
         </div>

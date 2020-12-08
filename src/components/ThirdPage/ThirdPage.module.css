@@ -19,6 +19,7 @@
   position: absolute;
   border: 0.5px solid makerBlack;
   background-color: makerWhite;
+  animation: Opacity 1.8s linear forwards 0s;
 }
 
 .git {
@@ -28,6 +29,7 @@
   top: 14.7%;
   right: 9.25%;
   border: 0.5px solid makerBlack;
+  animation: Opacity 1.8s linear forwards 0s;
 }
 
 .graphql {
@@ -37,6 +39,7 @@
   bottom: 23.35%;
   right: 7%;
   border: 0.5px solid makerBlack;
+  animation: Opacity 1.8s linear forwards 0s;
 }
 
 .jest {
@@ -46,6 +49,7 @@
   bottom: 23.35%;
   left: 3%;
   border: 0.5px solid makerBlack;
+  animation: Opacity 1.8s linear forwards 0s;
 }
 
 .w {
@@ -72,4 +76,13 @@
   background-color: makerWhite;
   position: absolute;
   transform: translate(-50%, -50%);
+}
+
+@keyframes Opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

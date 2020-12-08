@@ -1,48 +1,47 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./app.module.css";
-import Nav from "./utils/Nav/Nav";
-import { MenuOutlined } from "@ant-design/icons";
+import { useDispatch, useSelector } from "react-redux";
+import { increasePage, decreasePage } from "./_actions/page_actions";
+import ReactScrollWheelHandler from "react-scroll-wheel-handler";
 
 import FirstPage from "./components/FirstPage/FirstPage";
 import SecondPage from "./components/SecondPage/SecondPage";
 import ThirdPage from "./components/ThirdPage/ThirdPage";
 
-class App extends React.Component {
-  // state = {
-  //   page: 0,
-  // };
+const App = () => {
+  const dispatch = useDispatch();
 
-  // clickHandler = () => {
-  //   let count = this.state.page + 1;
-  //   this.setState({ page: count });
-  // };
+  const state = useSelector((state) => state.page);
+  const page = state.page ? state.page : 1;
 
-  render() {
-    return (
-      <div className={styles.app}>
-        {/* <FirstPage /> */}
-        {/* <SecondPage /> */}
-        <ThirdPage />
-        {/* <Home />
-        <div className={styles.menu}>
-          <MenuOutlined />
-        </div>
-        <div className={styles.nav}>
-          <Nav />
-        </div>
-        <div className={styles.buttons}>
-          <Buttons />
-        </div> */}
+  const onIncreaseHandler = (e) => {
+    e.preventDefault();
+    dispatch(increasePage(page));
+  };
 
-        {/* <button onClick={this.clickHandler}>button</button>
-        {this.state.page === 0 && <Start />}
-        {this.state.page === 1 && <Introduction />}
-        {this.state.page === 2 && <Home />}
-        {this.state.page === 3 && <WorkedAsAE />}
-        {this.state.page === 4 && <SoloProjects />} */}
-      </div>
-    );
-  }
-}
+  const onDecreaseHandler = (e) => {
+    e.preventDefault();
+    dispatch(decreasePage(page));
+  };
+
+  const TIME_OUT = 2000;
+  return (
+    <div className={styles.app}>
+      <ReactScrollWheelHandler
+        upHandler={onDecreaseHandler}
+        downHandler={onIncreaseHandler}
+        timeout={TIME_OUT}
+        style={{
+          width: "100vw",
+          height: "100vh",
+        }}
+      >
+        {page === 1 && <FirstPage />}
+        {page === 2 && <SecondPage />}
+        {page === 3 && <ThirdPage />}
+      </ReactScrollWheelHandler>
+    </div>
+  );
+};
 
 export default App;

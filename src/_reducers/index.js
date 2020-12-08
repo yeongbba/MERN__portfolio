@@ -1,5 +1,5 @@
 import { combineReducers } from "redux";
-import page from "./page_reducer";
+import page from "./page_reducers";
 
 const rootReducer = combineReducers({
   page,
