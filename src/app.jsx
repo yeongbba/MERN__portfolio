@@ -7,10 +7,12 @@ import ReactScrollWheelHandler from "react-scroll-wheel-handler";
 import FirstPage from "./components/FirstPage/FirstPage";
 import SecondPage from "./components/SecondPage/SecondPage";
 import ThirdPage from "./components/ThirdPage/ThirdPage";
+import FourthPage from "./components/FourthPage/FourthPage";
 
 const App = () => {
-  const dispatch = useDispatch();
+  const TIME_OUT = 2000;
 
+  const dispatch = useDispatch();
   const state = useSelector((state) => state.page);
   const page = state.page ? state.page : 1;
 
@@ -24,7 +26,6 @@ const App = () => {
     dispatch(decreasePage(page));
   };
 
-  const TIME_OUT = 2000;
   return (
     <div className={styles.app}>
       <ReactScrollWheelHandler
@@ -39,6 +40,7 @@ const App = () => {
         {page === 1 && <FirstPage />}
         {page === 2 && <SecondPage />}
         {page === 3 && <ThirdPage />}
+        {page === 4 && <FourthPage />}
       </ReactScrollWheelHandler>
     </div>
   );
