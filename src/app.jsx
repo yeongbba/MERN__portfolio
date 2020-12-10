@@ -16,13 +16,11 @@ const App = () => {
   const state = useSelector((state) => state.page);
   const page = state.page ? state.page : 1;
 
-  const onIncreaseHandler = (e) => {
-    e.preventDefault();
+  const onIncreaseHandler = () => {
     dispatch(increasePage(page));
   };
 
-  const onDecreaseHandler = (e) => {
-    e.preventDefault();
+  const onDecreaseHandler = () => {
     dispatch(decreasePage(page));
   };
 

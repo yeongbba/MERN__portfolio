@@ -8,3 +8,30 @@
   width: 100vw;
   height: 100vh;
 } */
+
+.d {
+  top: 60%;
+  left: 50%;
+  height: 80%;
+  font-family: Gotham_Bold;
+  font-size: 30vw;
+  color: makerDeepBlue;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.sub {
+  top: 75%;
+  left: 50%;
+  width: 12%;
+  height: 4.5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Noto_Sans_KR;
+  font-size: 1.05vw;
+  font-weight: 700;
+  background-color: makerWhite;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
