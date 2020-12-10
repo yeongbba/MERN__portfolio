@@ -1,0 +1,10 @@
+@value makerDeepBlue from  '../../common/colors.css';
+@value makerWhite from  '../../common/colors.css';
+@value makerBlack from  '../../common/colors.css';
+@value Gotham_Bold from  '../../common/fonts.css';
+@value Noto_Sans_KR from  '../../common/fonts.css';
+
+/* .container {
+  width: 100vw;
+  height: 100vh;
+} */

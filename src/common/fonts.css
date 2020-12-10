@@ -29,6 +29,16 @@
   src: url("../fonts/KoPubDotum_Pro_Light.otf");
 }
 
+@font-face {
+  font-family: Yoon_Gothic_760;
+  src: url("../fonts/YoonGothic760.ttf");
+}
+
+@font-face {
+  font-family: Yoon_Gothic_790;
+  src: url("../fonts/YoonGothic790.ttf");
+}
+
 @value Gotham_Ultra: Gotham_Ultra;
 @value Gotham_Bold: Gotham_Bold;
 @value Gotham_Medium: Gotham_Medium;
@@ -36,3 +46,5 @@
 @value Multi_Colore: Multi_Colore;
 @value Kopub_Light: Kopub_Light;
 @value Noto_Sans_KR: 'Noto Sans KR', sans-serif;
+@value Yoon_Gothic_760: Yoon_Gothic_760;
+@value Yoon_Gothic_790: Yoon_Gothic_790;

@@ -37,10 +37,10 @@ const App = () => {
           height: "100vh",
         }}
       >
-        {page === 1 && <FirstPage />}
+        {/* {page === 1 && <FirstPage />}
         {page === 2 && <SecondPage />}
-        {page === 3 && <ThirdPage />}
-        {page === 4 && <FourthPage />}
+        {page === 3 && <ThirdPage />} */}
+        {page === 1 && <FourthPage />}
       </ReactScrollWheelHandler>
     </div>
   );
