@@ -7,8 +7,8 @@ function Logo({ name }) {
       <Image
         cloudName="dpgnpcuzq"
         publicId={`portfolio/${name}`}
-        width="50"
-        heigth="50"
+        width="70"
+        heigth="70"
         crop="scale"
         style={{ borderRadius: "50%", border: "2px solid black" }}
       ></Image>
