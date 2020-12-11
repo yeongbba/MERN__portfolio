@@ -2,36 +2,61 @@
 @value makerWhite from  '../../common/colors.css';
 @value makerBlack from  '../../common/colors.css';
 @value Gotham_Bold from  '../../common/fonts.css';
+@value Gotham_Medium from  '../../common/fonts.css';
 @value Noto_Sans_KR from  '../../common/fonts.css';
 
-/* .container {
+.container {
   width: 100vw;
   height: 100vh;
-} */
+  background: rgb(187, 186, 186);
+  background: linear-gradient(
+    180deg,
+    rgba(225, 225, 225, 1) 0%,
+    rgba(232, 232, 232, 1) 6%,
+    rgba(255, 255, 255, 1) 14%
+  );
+}
 
 .d {
-  top: 60%;
+  top: 40%;
   left: 50%;
   height: 80%;
-  font-family: Gotham_Bold;
-  font-size: 30vw;
+  font-family: Gotham_Medium;
+  font-size: 35vw;
+  color: makerDeepBlue;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.title {
+  top: 46%;
+  left: 50%;
+  width: 9%;
+  height: 4.5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Noto_Sans_KR;
+  font-size: 1.5vw;
+  font-weight: 900;
   color: makerDeepBlue;
   position: absolute;
   transform: translate(-50%, -50%);
 }
 
 .sub {
-  top: 75%;
+  top: 51%;
   left: 50%;
-  width: 12%;
+  width: 9%;
   height: 4.5%;
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: Noto_Sans_KR;
-  font-size: 1.05vw;
+  font-size: 1vw;
   font-weight: 700;
-  background-color: makerWhite;
+  color: makerWhite;
+  background-color: makerDeepBlue;
   position: absolute;
   transform: translate(-50%, -50%);
 }
