@@ -14,12 +14,12 @@
 .leftBubble {
   position: relative;
   background-color: makerWhite;
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+  /* box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3); */
   display: inline-block;
   vertical-align: top;
   border: solid #000;
-  border-width: 3px 3px 3px 10px;
-  margin: 20px 20px;
+  border-width: 0.235vw 0.235vw 0.235vw 0.78vw;
+  margin: 14% 14%;
   width: 100%;
   height: 100%;
   transform: rotate(-90deg);
@@ -28,12 +28,12 @@
 .rightBubble {
   position: relative;
   background-color: makerWhite;
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+  /* box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3); */
   display: inline-block;
   vertical-align: top;
   border: solid #000;
-  border-width: 3px 3px 3px 10px;
-  margin: 20px 20px;
+  border-width: 0.235vw 0.235vw 0.235vw 0.78vw;
+  margin: 14% 14%;
   width: 100%;
   height: 100%;
   transform: rotate(-90deg) scale(1, -1);
@@ -47,26 +47,26 @@
   background-color: makerWhite;
   content: "\00a0";
   display: block;
-  height: 18px;
-  width: 24px;
-  left: 20px;
-  bottom: -10px;
+  height: 6%;
+  width: 18.5%;
+  left: 15.5%;
+  bottom: -2.9%;
   transform: rotate(-45deg) skew(-45deg);
 }
 
 .leftBubble.arrow::before,
 .rightBubble.arrow::before {
   background-color: makerBlack;
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
-  left: 14px;
-  width: 23px;
+  /* box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3); */
+  left: 11.5%;
+  width: 15%;
 }
 
 .leftBubble.arrow::after,
 .rightBubble.arrow::after {
-  bottom: -8px;
-  border: 3px solid #000;
-  border-width: 0 4px 3px 4px;
+  bottom: -2.4%;
+  border: solid #000;
+  border-width: 0 0.3vw 0.235vw 0.3vw;
 }
 
 .leftBubble > .content,
@@ -83,8 +83,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  width: 140%;
-  height: 100%;
+  width: 200%;
+  height: 50%;
   transform: rotate(90deg);
   word-break: break-all;
 }
@@ -94,26 +94,113 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  width: 140%;
-  height: 100%;
+  width: 200%;
+  height: 50%;
   transform: rotate(90deg) scale(-1, 1);
-  word-break: break-all;
 }
 
 .content__text {
+  text-align: start;
   font-family: Yoon_Gothic_760;
-  font-size: 0.95vw;
+  font-size: 0.85vw;
+  word-break: break-word;
+  margin-bottom: 1%;
+  line-height: 160%;
 }
 
 .content__title {
   font-family: Yoon_Gothic_790;
-  font-size: 1vw;
+  font-size: 0.83vw;
 }
 
-.js {
-  width: 13vw;
+/* javascript */
+.text__js {
+  width: 11vw;
+  height: 53vh;
 }
 
-.js .arrow::before {
-  left: 10px;
+.text__js .content__box {
+  position: relative;
+  top: 18%;
+  right: 50%;
+}
+
+/* api */
+.text__api {
+  width: 11vw;
+  height: 55vh;
+}
+
+.text__api .content__box {
+  position: relative;
+  top: 33%;
+  right: 50%;
+}
+
+.text__api .arrow::before {
+  left: 73%;
+}
+
+.text__api .arrow::after {
+  left: 77%;
+}
+
+/* git */
+.text__git {
+  width: 12vw;
+  height: 51vh;
+}
+
+.text__git .content__box {
+  position: relative;
+  top: 25%;
+  right: 50%;
+}
+
+.text__git .arrow::before {
+  left: 55%;
+}
+
+.text__git .arrow::after {
+  left: 59%;
+}
+
+/* security */
+.text__react {
+  width: 12vw;
+  height: 51vh;
+}
+
+.text__react .content__box {
+  position: relative;
+  top: 24%;
+  right: 50%;
+}
+
+.text__react .arrow::before {
+  left: 45.5%;
+}
+
+.text__react .arrow::after {
+  left: 49%;
+}
+
+/* security */
+.text__security {
+  width: 12vw;
+  height: 51vh;
+}
+
+.text__security .content__box {
+  position: relative;
+  top: 25%;
+  right: 50%;
+}
+
+.text__security .arrow::before {
+  left: 55%;
+}
+
+.text__security .arrow::after {
+  left: 59%;
 }

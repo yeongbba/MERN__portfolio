@@ -11,7 +11,7 @@ const FirstPage = () => {
   const dispatch = useDispatch();
   const [Background, setBackground] = useState(false);
   const state = useSelector((state) => state.page);
-  const page = state.page ? state.page : 1;
+  const page = state.page ? state.page : 0;
 
   const changeBlackBG = () => {
     setBackground(true);

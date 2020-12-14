@@ -30,6 +30,11 @@
 }
 
 @font-face {
+  font-family: Kopub_Medium;
+  src: url("../fonts/KoPubDotum_Pro_Medium.otf");
+}
+
+@font-face {
   font-family: Yoon_Gothic_760;
   src: url("../fonts/YoonGothic760.ttf");
 }
@@ -45,6 +50,7 @@
 @value Maven_Pro: 'Maven Pro', sans-serif;
 @value Multi_Colore: Multi_Colore;
 @value Kopub_Light: Kopub_Light;
+@value Kopub_Medium: Kopub_Medium;
 @value Noto_Sans_KR: 'Noto Sans KR', sans-serif;
 @value Yoon_Gothic_760: Yoon_Gothic_760;
 @value Yoon_Gothic_790: Yoon_Gothic_790;

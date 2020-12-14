@@ -1,8 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import styles from "./app.module.css";
 import { useDispatch, useSelector } from "react-redux";
 import { increasePage, decreasePage } from "./_actions/page_actions";
 import ReactScrollWheelHandler from "react-scroll-wheel-handler";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from "react-responsive-carousel";
 
 import FirstPage from "./components/FirstPage/FirstPage";
 import SecondPage from "./components/SecondPage/SecondPage";
@@ -14,7 +16,7 @@ const App = () => {
 
   const dispatch = useDispatch();
   const state = useSelector((state) => state.page);
-  const page = state.page ? state.page : 1;
+  const page = state.page ? state.page : 0;
 
   const onIncreaseHandler = () => {
     dispatch(increasePage(page));
@@ -35,10 +37,31 @@ const App = () => {
           height: "100vh",
         }}
       >
-        {/* {page === 1 && <FirstPage />}
-        {page === 2 && <SecondPage />}
-        {page === 3 && <ThirdPage />} */}
-        {page === 1 && <FourthPage />}
+        <Carousel
+          axis={"vertical"}
+          verticalSwipe={"standard"}
+          useKeyboardArrows={true}
+          showArrows={false}
+          autoFocus={true}
+          selectedItem={page}
+          showIndicators={false}
+          showStatus={false}
+          showThumbs={false}
+          transitionTime={500}
+        >
+          <div>
+            <FirstPage />
+          </div>
+          <div>
+            <SecondPage />
+          </div>
+          <div>
+            <ThirdPage />
+          </div>
+          <div>
+            <FourthPage />
+          </div>
+        </Carousel>
       </ReactScrollWheelHandler>
     </div>
   );

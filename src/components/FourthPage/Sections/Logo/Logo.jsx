@@ -3,14 +3,22 @@ import { Image } from "cloudinary-react";
 
 function Logo({ name }) {
   return (
-    <div>
+    <div
+      style={{
+        width: "5.2vw",
+        height: "10.15vh",
+        borderRadius: "50%",
+        border: "0.235vw solid black",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+      }}
+    >
       <Image
         cloudName="dpgnpcuzq"
         publicId={`portfolio/${name}`}
-        width="70"
-        heigth="70"
         crop="scale"
-        style={{ borderRadius: "50%", border: "2px solid black" }}
+        style={{ width: "4.75vw", height: "9.35vh", borderRadius: "50%" }}
       ></Image>
     </div>
   );

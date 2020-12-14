@@ -7,7 +7,7 @@ const TextBox = ({ direction, text, title, id }) => {
       <div className={`${styles[direction]} ${styles.arrow}`}>
         <div className={styles.content}>
           <div className={styles.content__box}>
-            <span className={styles.content__text}>{text}</span>
+            <pre className={styles.content__text}>{text}</pre>
             <span className={styles.content__title}>{title}</span>
           </div>
         </div>

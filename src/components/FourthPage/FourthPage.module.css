@@ -8,6 +8,7 @@
 .container {
   width: 100vw;
   height: 100vh;
+  position: relative;
   background: rgb(187, 186, 186);
   background: linear-gradient(
     180deg,
@@ -15,6 +16,7 @@
     rgba(232, 232, 232, 1) 6%,
     rgba(255, 255, 255, 1) 14%
   );
+  overflow: hidden;
 }
 
 .d {
@@ -59,4 +61,66 @@
   background-color: makerDeepBlue;
   position: absolute;
   transform: translate(-50%, -50%);
+}
+
+/* logo */
+.javascript {
+  position: absolute;
+  top: 36%;
+  left: 35%;
+}
+
+.apiss {
+  position: absolute;
+  top: 61%;
+  left: 2.7%;
+}
+
+.git {
+  position: absolute;
+  top: 20.5%;
+  left: 53.5%;
+}
+
+.reacts {
+  position: absolute;
+  top: 43%;
+  right: 6%;
+}
+
+.security {
+  position: absolute;
+  top: 69%;
+  left: 53.5%;
+}
+
+/* speech bubble */
+.text__js {
+  position: absolute;
+  top: 7%;
+  left: 5.8%;
+}
+
+.text__api {
+  position: absolute;
+  top: 45%;
+  left: 9.1%;
+}
+
+.text__security {
+  position: absolute;
+  top: 47%;
+  right: 26%;
+}
+
+.text__git {
+  position: absolute;
+  top: -4%;
+  right: 28%;
+}
+
+.text__react {
+  position: absolute;
+  top: 22%;
+  right: 28%;
 }

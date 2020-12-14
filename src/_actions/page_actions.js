@@ -19,7 +19,7 @@ export function decreasePage(page) {
 }
 
 export function goFirstPage() {
-  const page = 1;
+  const page = 0;
 
   return {
     type: DECREASE_PAGE,

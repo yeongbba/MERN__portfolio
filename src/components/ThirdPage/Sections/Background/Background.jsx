@@ -25,7 +25,7 @@ const Background = () => {
   return (
     <div className={styles.container}>
       <div className={styles.rowBox}>{makeLine(10, "row")}</div>
-      <div className={styles.colBox}>{makeLine(10, "col")}</div>
+      <div className={styles.colBox}>{makeLine(9, "col")}</div>
     </div>
   );
 };

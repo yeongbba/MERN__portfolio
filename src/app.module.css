@@ -8,40 +8,19 @@
 .app {
   width: 100vw;
   height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-image: makerGrey;
-  background-size: 100%;
   position: relative;
+  overflow: hidden;
 }
 
-.buttons {
-  position: absolute;
-  bottom: 10px;
-  right: 15px;
+.opacity {
+  animation: Opacity 0.5s linear forwards 0s;
 }
 
-.nav {
-  height: 9rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  position: absolute;
-  bottom: 45%;
-  right: 20px;
-}
-
-.menu {
-  position: absolute;
-  top: 15px;
-  left: 20px;
-  color: makerWhite;
-  font-size: 1.6rem;
-}
-
-.menu:hover {
-  cursor: pointer;
+@keyframes Opacity {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }

@@ -2,6 +2,8 @@
 @value makerBlack from  '../../../../common/colors.css';
 @value Gotham_Bold from  '../../../../common/fonts.css';
 @value Kopub_Light from  '../../../../common/fonts.css';
+@value Kopub_Medium from  '../../../../common/fonts.css';
+@value Yoon_Gothic_790 from  '../../../../common/fonts.css';
 
 .container {
   width: 100%;
@@ -14,21 +16,28 @@
 }
 
 .title1 {
-  font-family: Gotham_Bold;
-  font-size: 3.5vw;
+  font-family: Yoon_Gothic_790;
+  font-size: 3.1vw;
   color: makerDeepBlue;
+  letter-spacing: 0.02vw;
 }
 
 .title2 {
-  font-family: Gotham_Bold;
-  font-size: 3.5vw;
+  font-family: Yoon_Gothic_790;
+  font-size: 3.1vw;
   color: makerBlack;
+  letter-spacing: 0.02vw;
+}
+
+.titleBox {
+  position: relative;
+  bottom: 3%;
 }
 
 .text {
-  font-family: Kopub_Light;
-  font-size: 1vw;
+  font-family: Kopub_Medium;
+  font-size: 0.89vw;
   color: makerBlack;
   position: relative;
-  bottom: 5%;
+  bottom: 3%;
 }
