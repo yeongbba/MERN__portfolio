@@ -28,14 +28,13 @@ const FourthPage = () => {
 
   return (
     <div className={styles.container}>
-      <TopMenu />
-
       <div className={styles.d}>D</div>
       <div className={styles.title}>DEPTH</div>
       <div className={styles.sub}>개발을 깊이 있게</div>
       {renderTextBox()}
       {renderLogo()}
 
+      <TopMenu />
       <Scroll />
       <BottomMenu />
     </div>

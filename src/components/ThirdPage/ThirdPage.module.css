@@ -19,7 +19,6 @@
   position: absolute;
   border: 0.5px solid makerBlack;
   background-color: makerWhite;
-  animation: Opacity 1.8s linear forwards 0s;
 }
 
 .git {
@@ -29,7 +28,6 @@
   top: 14.7%;
   right: 9.25%;
   border: 0.5px solid makerBlack;
-  animation: Opacity 1.8s linear forwards 0s;
 }
 
 .graphql {
@@ -39,7 +37,6 @@
   bottom: 23.35%;
   right: 7%;
   border: 0.5px solid makerBlack;
-  animation: Opacity 1.8s linear forwards 0s;
 }
 
 .jest {
@@ -49,40 +46,40 @@
   bottom: 23.35%;
   left: 3%;
   border: 0.5px solid makerBlack;
-  animation: Opacity 1.8s linear forwards 0s;
 }
 
-.w {
-  top: 44%;
-  left: 50%;
-  height: 80%;
-  font-family: Gotham_Bold;
-  font-size: 33vw;
+/* .title {
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
   position: absolute;
+  justify-content: center;
+  align-items: center;
+} */
+
+.w {
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
+  display: inline-block;
+  font-family: Gotham_Bold;
+  font-size: 33vmax;
+  position: absolute;
 }
 
 .sub {
-  top: 65%;
-  left: 50%;
   width: 10.7%;
   height: 3.7%;
   display: flex;
+  top: 58%;
+  left: 50%;
+  transform: translateX(-50%);
   justify-content: center;
   align-items: center;
   font-family: Noto_Sans_KR;
-  font-size: 0.95vw;
+  font-size: 0.95vmax;
   font-weight: 900;
   background-color: makerWhite;
   position: absolute;
-  transform: translate(-50%, -50%);
-}
-
-@keyframes Opacity {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }

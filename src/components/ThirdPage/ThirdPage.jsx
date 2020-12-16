@@ -44,10 +44,12 @@ const ThirdPage = () => {
   return (
     <div className={styles.container}>
       <Background />
-      <TopMenu />
-      <div className={styles.w}>W</div>
+
+      <span className={styles.w}>w</span>
       <div className={styles.sub}>WIDTH / 개발을 폭넓게</div>
       <div>{renderCard()}</div>
+
+      <TopMenu />
       <Scroll />
       <BottomMenu />
     </div>

@@ -24,7 +24,7 @@
   left: 50%;
   height: 80%;
   font-family: Gotham_Medium;
-  font-size: 35vw;
+  font-size: 35vmax;
   color: makerDeepBlue;
   position: absolute;
   transform: translate(-50%, -50%);
@@ -39,7 +39,7 @@
   justify-content: center;
   align-items: center;
   font-family: Noto_Sans_KR;
-  font-size: 1.5vw;
+  font-size: 1.5vmax;
   font-weight: 900;
   color: makerDeepBlue;
   position: absolute;
@@ -55,7 +55,7 @@
   justify-content: center;
   align-items: center;
   font-family: Noto_Sans_KR;
-  font-size: 1vw;
+  font-size: 1vmax;
   font-weight: 700;
   color: makerWhite;
   background-color: makerDeepBlue;

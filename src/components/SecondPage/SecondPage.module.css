@@ -4,9 +4,9 @@
 .container {
   width: 100vw;
   height: 100vh;
+  min-width: 1000px;
+  min-height: 550px;
   background-color: makerBlack;
-  overflow: hidden;
-  animation: Opacity 0.2s linear forwards 0s;
 }
 
 .content {
@@ -15,7 +15,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: makerWhite;
 }
 
 .content__text {
@@ -27,8 +27,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  animation: Opacity 1.8s linear forwards 0s;
-  animation-delay: 0.01s;
 }
 
 .content__test {
@@ -40,13 +38,4 @@
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-@keyframes Opacity {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }

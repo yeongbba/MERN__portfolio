@@ -14,13 +14,13 @@
 
 .scroll__text {
   font-family: Maven_Pro;
-  font-size: 1.2vw;
+  font-size: 0.974rem;
   color: makerWhite;
   margin-bottom: 5%;
 }
 
 .scroll__icon {
-  font-size: 1.2vw;
+  font-size: 0.974rem;
   color: makerWhite;
   animation: slideUp 1s linear infinite 0s;
 }

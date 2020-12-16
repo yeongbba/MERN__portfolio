@@ -2,8 +2,8 @@
 @value makerBlack from "../../common/colors.css";
 
 .container {
-  width: 3.7%;
-  height: 6.9%;
+  width: 2.5rem;
+  height: 2.5rem;
   position: absolute;
   bottom: 8%;
   right: 3%;
@@ -11,7 +11,7 @@
   justify-content: center;
   align-items: center;
   background-color: makerWhite;
-  font-size: 1.3vw;
+  font-size: 0.813rem;
   color: makerBlack;
 }
 

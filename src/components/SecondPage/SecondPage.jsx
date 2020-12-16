@@ -9,8 +9,6 @@ import styles from "./SecondPage.module.css";
 const SecondPage = () => {
   return (
     <div className={styles.container}>
-      <TopMenu />
-
       <div className={styles.content}>
         <div className={styles.content__text}>
           <Text />
@@ -19,6 +17,7 @@ const SecondPage = () => {
           <TestCode />
         </div>
       </div>
+      <TopMenu />
       <Scroll />
       <BottomMenu />
     </div>

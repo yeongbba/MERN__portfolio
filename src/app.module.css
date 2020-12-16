@@ -1,6 +1,3 @@
-@value makerGrey from  './common/colors.css';
-@value makerWhite from  './common/colors.css';
-
 * {
   box-sizing: border-box;
 }
@@ -10,17 +7,4 @@
   height: 100vh;
   position: relative;
   overflow: hidden;
-}
-
-.opacity {
-  animation: Opacity 0.5s linear forwards 0s;
-}
-
-@keyframes Opacity {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
 }

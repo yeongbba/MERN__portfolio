@@ -1,28 +1,27 @@
 @value Noto_Sans_KR from  '../../../../common/fonts.css';
 
 .container {
-  width: 100%;
-  height: 100%;
+  width: 30rem;
+  height: 30rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding-left: 5%;
   font-family: Noto_Sans_KR;
   font-weight: 300;
 }
 
 .start {
-  font-size: 1vw;
+  font-size: 1.012rem;
   margin-left: 5%;
 }
 
 .middle {
-  font-size: 1vw;
+  font-size: 1.012rem;
   margin-left: 8%;
 }
 
 .end {
-  font-size: 1vw;
+  font-size: 1.012rem;
   margin-left: 11%;
 }

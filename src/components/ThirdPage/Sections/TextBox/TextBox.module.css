@@ -17,14 +17,14 @@
 
 .title1 {
   font-family: Yoon_Gothic_790;
-  font-size: 3.1vw;
+  font-size: 3.1vmax;
   color: makerDeepBlue;
   letter-spacing: 0.02vw;
 }
 
 .title2 {
   font-family: Yoon_Gothic_790;
-  font-size: 3.1vw;
+  font-size: 3.1vmax;
   color: makerBlack;
   letter-spacing: 0.02vw;
 }
@@ -36,7 +36,7 @@
 
 .text {
   font-family: Kopub_Medium;
-  font-size: 0.89vw;
+  font-size: 0.89vmax;
   color: makerBlack;
   position: relative;
   bottom: 3%;
