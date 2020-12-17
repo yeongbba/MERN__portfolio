@@ -2,8 +2,7 @@
 @value Multi_Colore from "../../common/fonts.css";
 
 .container {
-  width: 100vw;
-  min-width: 1000px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -13,13 +12,16 @@
 }
 
 .rightMenu {
-  width: 14%;
+  width: 12rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-family: Multi_Colore;
   font-size: 0.887rem;
   color: makerWhite;
+  position: absolute;
+  top: 0%;
+  right: 3%;
 }
 
 .rightMenu a {
@@ -29,7 +31,10 @@
 
 .leftMenu {
   color: makerWhite;
-  font-size: 2vw;
+  font-size: 1.2rem;
+  position: absolute;
+  top: 0%;
+  left: 3%;
 }
 
 .leftMenu:hover {

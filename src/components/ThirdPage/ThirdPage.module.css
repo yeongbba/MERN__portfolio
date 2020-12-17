@@ -7,45 +7,47 @@
 .container {
   width: 100vw;
   height: 100vh;
+  min-width: 1160px;
+  min-height: 550px;
   background-color: makerDeepBlue;
   position: relative;
 }
 
 .typescript {
-  height: 19.6%;
-  width: 25.2%;
+  height: 8.069rem;
+  width: 20.334rem;
   top: 20.7%;
   left: 6.25%;
   position: absolute;
-  border: 0.5px solid makerBlack;
+  border: 0.031rem solid makerBlack;
   background-color: makerWhite;
 }
 
 .git {
-  height: 19.6%;
-  width: 22%;
+  height: 8.069rem;
+  width: 17.736rem;
   position: absolute;
   top: 14.7%;
   right: 9.25%;
-  border: 0.5px solid makerBlack;
+  border: 0.031rem solid makerBlack;
 }
 
 .graphql {
-  height: 19.6%;
-  width: 21%;
+  height: 8.069rem;
+  width: 16.924rem;
   position: absolute;
   bottom: 23.35%;
   right: 7%;
-  border: 0.5px solid makerBlack;
+  border: 0.031rem solid makerBlack;
 }
 
 .jest {
-  height: 19.6%;
-  width: 30%;
+  height: 8.069rem;
+  width: 24.231rem;
   position: absolute;
   bottom: 23.35%;
   left: 3%;
-  border: 0.5px solid makerBlack;
+  border: 0.031rem solid makerBlack;
 }
 
 /* .title {
@@ -64,13 +66,13 @@
   transform: translate(-50%, -50%);
   display: inline-block;
   font-family: Gotham_Bold;
-  font-size: 33vmax;
+  font-size: 26.788rem;
   position: absolute;
 }
 
 .sub {
-  width: 10.7%;
-  height: 3.7%;
+  width: 8.637rem;
+  height: 1.544rem;
   display: flex;
   top: 58%;
   left: 50%;
@@ -78,7 +80,7 @@
   justify-content: center;
   align-items: center;
   font-family: Noto_Sans_KR;
-  font-size: 0.95vmax;
+  font-size: 0.762rem;
   font-weight: 900;
   background-color: makerWhite;
   position: absolute;

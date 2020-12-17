@@ -17,16 +17,16 @@
 
 .title1 {
   font-family: Yoon_Gothic_790;
-  font-size: 3.1vmax;
+  font-size: 2.513rem;
   color: makerDeepBlue;
-  letter-spacing: 0.02vw;
+  letter-spacing: 0.016rem;
 }
 
 .title2 {
   font-family: Yoon_Gothic_790;
-  font-size: 3.1vmax;
+  font-size: 2.513rem;
   color: makerBlack;
-  letter-spacing: 0.02vw;
+  letter-spacing: 0.016rem;
 }
 
 .titleBox {
@@ -36,7 +36,7 @@
 
 .text {
   font-family: Kopub_Medium;
-  font-size: 0.89vmax;
+  font-size: 0.719rem;
   color: makerBlack;
   position: relative;
   bottom: 3%;

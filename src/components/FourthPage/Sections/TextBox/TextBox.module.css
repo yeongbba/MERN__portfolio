@@ -6,8 +6,8 @@
 
 .containerBox {
   position: relative;
-  width: 11vw;
-  height: 40vh;
+  width: 8.876rem;
+  height: 16.3rem;
   left: 50%;
 }
 
@@ -18,7 +18,7 @@
   display: inline-block;
   vertical-align: top;
   border: solid #000;
-  border-width: 0.235vmax 0.235vmax 0.235vmax 0.78vmax;
+  border-width: 0.19rem 0.19rem 0.19rem 0.629rem;
   margin: 14% 14%;
   width: 100%;
   height: 100%;
@@ -32,7 +32,7 @@
   display: inline-block;
   vertical-align: top;
   border: solid #000;
-  border-width: 0.235vw 0.235vw 0.235vw 0.78vw;
+  border-width: 0.19rem 0.19rem 0.19rem 0.629rem;
   margin: 14% 14%;
   width: 100%;
   height: 100%;
@@ -66,7 +66,7 @@
 .rightBubble.arrow::after {
   bottom: -2.4%;
   border: solid #000;
-  border-width: 0 0.3vmax 0.235vmax 0.3vmax;
+  border-width: 0 0.242rem 0.19rem 0.242rem;
 }
 
 .leftBubble > .content,
@@ -102,7 +102,7 @@
 .content__text {
   text-align: start;
   font-family: Yoon_Gothic_760;
-  font-size: 0.85vmax;
+  font-size: 0.69rem;
   word-break: break-word;
   margin-bottom: 1%;
   line-height: 160%;
@@ -110,13 +110,13 @@
 
 .content__title {
   font-family: Yoon_Gothic_790;
-  font-size: 0.83vmax;
+  font-size: 0.674rem;
 }
 
 /* javascript */
 .text__js {
-  width: 21.35vh;
-  height: 27.3vw;
+  width: 8.927rem;
+  height: 22.164rem;
 }
 
 .text__js .content__box {
@@ -127,8 +127,8 @@
 
 /* api */
 .text__api {
-  width: 21.35vh;
-  height: 28.32vw;
+  width: 8.927rem;
+  height: 22.992rem;
 }
 
 .text__api .content__box {
@@ -147,8 +147,8 @@
 
 /* git */
 .text__git {
-  width: 23.3vh;
-  height: 26.25vw;
+  width: 9.742rem;
+  height: 20.931rem;
 }
 
 .text__git .content__box {
@@ -167,8 +167,8 @@
 
 /* security */
 .text__react {
-  width: 23.3vh;
-  height: 26.25vw;
+  width: 9.742rem;
+  height: 20.931rem;
 }
 
 .text__react .content__box {
@@ -187,8 +187,8 @@
 
 /* security */
 .text__security {
-  width: 23.3vh;
-  height: 26.25vw;
+  width: 9.742rem;
+  height: 20.931rem;
 }
 
 .text__security .content__box {

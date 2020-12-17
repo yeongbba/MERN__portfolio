@@ -10,6 +10,7 @@ import FirstPage from "./components/FirstPage/FirstPage";
 import SecondPage from "./components/SecondPage/SecondPage";
 import ThirdPage from "./components/ThirdPage/ThirdPage";
 import FourthPage from "./components/FourthPage/FourthPage";
+import FifthPage from "./components/FifthPage/FifthPage";
 
 const App = () => {
   const TIME_OUT = 2000;
@@ -60,6 +61,9 @@ const App = () => {
           </div>
           <div>
             <FourthPage />
+          </div>
+          <div>
+            <FifthPage />
           </div>
         </Carousel>
       </ReactScrollWheelHandler>

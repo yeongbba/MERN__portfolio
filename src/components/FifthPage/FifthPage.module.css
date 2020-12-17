@@ -1,0 +1,36 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  min-width: 1160px;
+  min-height: 550px;
+  position: relative;
+}
+
+.card {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  top: 30%;
+  left: 10%;
+  width: 80%;
+  height: 50%;
+}
+
+.banner {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+}
+
+.title {
+  position: absolute;
+  top: 15%;
+  left: 5%;
+}
+
+.notice {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+}
