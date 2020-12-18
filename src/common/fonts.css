@@ -40,6 +40,11 @@
 }
 
 @font-face {
+  font-family: Yoon_Gothic_780;
+  src: url("../fonts/YoonGothic780.ttf");
+}
+
+@font-face {
   font-family: Yoon_Gothic_790;
   src: url("../fonts/YoonGothic790.ttf");
 }
@@ -53,4 +58,5 @@
 @value Kopub_Medium: Kopub_Medium;
 @value Noto_Sans_KR: 'Noto Sans KR', sans-serif;
 @value Yoon_Gothic_760: Yoon_Gothic_760;
+@value Yoon_Gothic_780: Yoon_Gothic_780;
 @value Yoon_Gothic_790: Yoon_Gothic_790;

@@ -4,14 +4,46 @@ import Card from "./Sections/Card/Card";
 import TopMenu from "../../utils/TopMenu/TopMenu";
 import Scroll from "../../utils/Scroll/Scroll";
 import BottomMenu from "../../utils/BottomMenu/BottomMenu";
+import newTweet from "../../images/nweet.png";
 import styles from "./FifthPage.module.css";
 
 const FifthPage = () => {
   const datas = [
-    { image: "javascript", text: "blahblah", tag: "blahbla", link: "www." },
-    { image: "javascript", text: "blahblah", tag: "blahbla", link: "www." },
-    { image: "javascript", text: "blahblah", tag: "blahbla", link: "www." },
-    { image: "javascript", text: "blahblah", tag: "blahbla", link: "www." },
+    {
+      image: newTweet,
+      title: `실시간 채팅 앱 New Tweet`,
+      text: `전체적인 컴포넌트의 구조를 잡고 Hooks로
+state 관리하는 법을 익힌 프로젝트입니다.
+또한, FireBase를 사용하면서 Oauth,
+DB, Storage에 대한 개념을 다졌습니다.
+`,
+      tag: `React | Javascript | Firebase`,
+      link: "https://yeongbba.github.io/ReactJS__new-tweet/",
+    },
+    {
+      image: newTweet,
+      text: "blahblah",
+      tag: `React | Redux | Javascript | Nodejs | express | MongoDB`,
+      link: "https://yeongbba.github.io/ReactJS__new-tweet/#/",
+    },
+    {
+      image: newTweet,
+      text: `React와 FireBase로 만든 실시간 채팅 어플리케이션 New Tweet입니다.
+이 프로젝트로 전체적인 컴포넌트의 구조를 잡고 Hooks로 state 관리하는 법을 익혔습니다.
+또한, FireBase를 사용하면서 Oauth, 데이터 베이스, Storage에 대한 개념을 잡았습니다.
+`,
+      tag: `React | Javascript | Firebase`,
+      link: "https://yeongbba.github.io/ReactJS__new-tweet/#/",
+    },
+    {
+      image: newTweet,
+      text: `React와 FireBase로 만든 실시간 채팅 어플리케이션 New Tweet입니다.
+이 프로젝트로 전체적인 컴포넌트의 구조를 잡고 Hooks로 state 관리하는 법을 익혔습니다.
+또한, FireBase를 사용하면서 Oauth, 데이터 베이스, Storage에 대한 개념을 잡았습니다.
+`,
+      tag: `React | Javascript | Firebase`,
+      link: "https://yeongbba.github.io/ReactJS__new-tweet/#/",
+    },
   ];
 
   const renderCards = () => {
