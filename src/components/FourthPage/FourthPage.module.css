@@ -2,126 +2,86 @@
 @value makerWhite from  '../../common/colors.css';
 @value makerBlack from  '../../common/colors.css';
 @value Gotham_Bold from  '../../common/fonts.css';
-@value Gotham_Medium from  '../../common/fonts.css';
 @value Noto_Sans_KR from  '../../common/fonts.css';
 
 .container {
   width: 100vw;
   height: 100vh;
-  min-width: 1200px;
+  min-width: 1160px;
   min-height: 550px;
-  position: relative;
-  background: rgb(187, 186, 186);
-  background: linear-gradient(
-    180deg,
-    rgba(225, 225, 225, 1) 0%,
-    rgba(232, 232, 232, 1) 6%,
-    rgba(255, 255, 255, 1) 14%
-  );
-  overflow: hidden;
-}
-
-.d {
-  top: 50%;
-  left: 50%;
-  font-family: Gotham_Medium;
-  font-size: 28.416rem;
-  color: makerDeepBlue;
-  position: absolute;
-  transform: translate(-50%, -50%);
-}
-
-.title {
-  top: 46%;
-  left: 50%;
-  width: 7.262rem;
-  height: 1.547rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: Noto_Sans_KR;
-  font-size: 1.21rem;
-  font-weight: 900;
-  color: makerDeepBlue;
-  position: absolute;
-  transform: translate(-50%, -50%);
-}
-
-.sub {
-  top: 51%;
-  left: 50%;
-  width: 7.307rem;
-  height: 1.881rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: Noto_Sans_KR;
-  font-size: 0.812rem;
-  font-weight: 700;
-  color: makerWhite;
   background-color: makerDeepBlue;
-  position: absolute;
-  transform: translate(-50%, -50%);
+  position: relative;
 }
 
-/* logo */
-.javascript {
+.typescript {
+  height: 8.069rem;
+  width: 20.334rem;
+  top: 20.7%;
+  left: 6.25%;
   position: absolute;
-  top: 36%;
-  left: 35%;
-}
-
-.apiss {
-  position: absolute;
-  top: 61%;
-  left: 2.7%;
+  border: 0.031rem solid makerBlack;
+  background-color: makerWhite;
 }
 
 .git {
+  height: 8.069rem;
+  width: 17.736rem;
   position: absolute;
-  top: 20.5%;
-  left: 53.5%;
+  top: 14.7%;
+  right: 9.25%;
+  border: 0.031rem solid makerBlack;
 }
 
-.reacts {
+.graphql {
+  height: 8.069rem;
+  width: 16.924rem;
   position: absolute;
-  top: 43%;
-  right: 6%;
+  bottom: 23.35%;
+  right: 7%;
+  border: 0.031rem solid makerBlack;
 }
 
-.security {
+.jest {
+  height: 8.069rem;
+  width: 24.231rem;
   position: absolute;
-  top: 69%;
-  left: 53.5%;
+  bottom: 23.35%;
+  left: 3%;
+  border: 0.031rem solid makerBlack;
 }
 
-/* speech bubble */
-.text__js {
+/* .title {
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
   position: absolute;
-  top: 7%;
-  left: 5.8%;
+  justify-content: center;
+  align-items: center;
+} */
+
+.w {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: inline-block;
+  font-family: Gotham_Bold;
+  font-size: 26.788rem;
+  position: absolute;
 }
 
-.text__api {
+.sub {
+  width: 8.637rem;
+  height: 1.544rem;
+  display: flex;
+  top: 58%;
+  left: 50%;
+  transform: translateX(-50%);
+  justify-content: center;
+  align-items: center;
+  font-family: Noto_Sans_KR;
+  font-size: 0.762rem;
+  font-weight: 900;
+  background-color: makerWhite;
   position: absolute;
-  top: 45%;
-  left: 9.1%;
-}
-
-.text__security {
-  position: absolute;
-  top: 47%;
-  right: 26%;
-}
-
-.text__git {
-  position: absolute;
-  top: -4%;
-  right: 28%;
-}
-
-.text__react {
-  position: absolute;
-  top: 22%;
-  right: 28%;
 }

@@ -7,17 +7,17 @@
   justify-content: space-between;
   align-items: center;
   position: absolute;
-  top: 5%;
+  top: 4%;
   left: 0%;
 }
 
 .rightMenu {
-  width: 12rem;
+  width: 10.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-family: Multi_Colore;
-  font-size: 0.887rem;
+  font-size: 0.8rem;
   color: makerWhite;
   position: absolute;
   top: 0%;
@@ -26,7 +26,7 @@
 
 .rightMenu a {
   color: rgba(255, 255, 255, 0.6);
-  font-size: 0.887rem;
+  font-size: 0.8rem;
 }
 
 .leftMenu {

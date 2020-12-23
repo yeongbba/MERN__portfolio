@@ -1,0 +1,89 @@
+@value makerDeepBlue from  '../../common/colors.css';
+@value makerWhite from  '../../common/colors.css';
+@value makerBlack from  '../../common/colors.css';
+@value Gotham_Bold from  '../../common/fonts.css';
+@value Noto_Sans_KR from  '../../common/fonts.css';
+@value Noto_Sans_CJK_Bold from  '../../common/fonts.css';
+@value Noto_Sans_CJK_Black from  '../../common/fonts.css';
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  min-width: 1160px;
+  min-height: 550px;
+  position: relative;
+}
+
+.card {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  top: 30%;
+  left: 10%;
+  width: 80%;
+  height: 70%;
+}
+
+.banner {
+  position: absolute;
+  font-family: Noto_Sans_KR;
+  font-weight: 900;
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 7.8%;
+  left: 10%;
+  width: 7.2rem;
+  height: 1.6rem;
+  color: makerWhite;
+  background-color: makerBlack;
+  border-radius: 5px;
+}
+
+.title {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  top: 12%;
+  left: 10%;
+  font-family: Noto_Sans_CJK_Bold;
+  font-size: 1.8rem;
+}
+
+.title span:last-child {
+  position: relative;
+  bottom: 0.3rem;
+}
+
+.notice {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  font-family: Noto_Sans_CJK_Black;
+  font-style: oblique;
+  font-size: 0.75rem;
+  top: 22%;
+  left: 41%;
+  animation: slideUp 1s linear infinite 0s;
+}
+
+.notice span:last-child {
+  position: relative;
+  font-size: 1.2rem;
+  bottom: 0.15rem;
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(15%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}

@@ -11,9 +11,11 @@ import SecondPage from "./components/SecondPage/SecondPage";
 import ThirdPage from "./components/ThirdPage/ThirdPage";
 import FourthPage from "./components/FourthPage/FourthPage";
 import FifthPage from "./components/FifthPage/FifthPage";
+import SixthPage from "./components/SixthPage/SixthPage";
+import SeventhPage from "./components/SeventhPage/SeventhPage";
 
 const App = () => {
-  const TIME_OUT = 2000;
+  const TIME_OUT = 1000;
 
   const dispatch = useDispatch();
   const state = useSelector((state) => state.page);
@@ -62,8 +64,15 @@ const App = () => {
           <div>
             <FourthPage />
           </div>
+
           <div>
             <FifthPage />
+          </div>
+          <div>
+            <SixthPage />
+          </div>
+          <div>
+            <SeventhPage />
           </div>
         </Carousel>
       </ReactScrollWheelHandler>

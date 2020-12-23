@@ -1,36 +1,126 @@
+@value makerDeepBlue from  '../../common/colors.css';
+@value makerWhite from  '../../common/colors.css';
+@value makerBlack from  '../../common/colors.css';
+@value Gotham_Bold from  '../../common/fonts.css';
+@value Gotham_Medium from  '../../common/fonts.css';
+@value Noto_Sans_KR from  '../../common/fonts.css';
+
 .container {
   width: 100vw;
   height: 100vh;
-  min-width: 1160px;
+  min-width: 1200px;
   min-height: 550px;
   position: relative;
+  background: linear-gradient(
+    180deg,
+    rgba(237, 237, 237, 1) 0%,
+    rgb(239, 239, 239) 3%,
+    rgba(250, 250, 250, 1) 6%
+  );
+  overflow: hidden;
 }
 
-.card {
+.d {
+  top: 50%;
+  left: 50%;
+  font-family: Gotham_Medium;
+  font-size: 28.416rem;
+  color: makerDeepBlue;
   position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  top: 30%;
-  left: 10%;
-  width: 80%;
-  height: 70%;
-}
-
-.banner {
-  position: absolute;
-  top: 10%;
-  left: 5%;
+  transform: translate(-50%, -50%);
 }
 
 .title {
+  top: 42%;
+  left: 50%;
+  width: 7.262rem;
+  height: 1.547rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Noto_Sans_KR;
+  font-size: 1.21rem;
+  font-weight: 900;
+  color: makerDeepBlue;
   position: absolute;
-  top: 15%;
+  transform: translate(-50%, -50%);
+}
+
+.sub {
+  top: 47%;
+  left: 50%;
+  width: 7.307rem;
+  height: 1.881rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Noto_Sans_KR;
+  font-size: 0.812rem;
+  font-weight: 700;
+  color: makerWhite;
+  background-color: makerDeepBlue;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+/* logo */
+.javascript {
+  position: absolute;
+  top: 41%;
+  left: 35%;
+}
+
+.apiss {
+  position: absolute;
+  top: 72%;
+  left: 47.2%;
+}
+
+.git {
+  position: absolute;
+  top: 20.5%;
+  left: 53.5%;
+}
+
+.reacts {
+  position: absolute;
+  top: 49.5%;
+  right: 6.6%;
+}
+
+.security {
+  position: absolute;
+  top: 63%;
   left: 5%;
 }
 
-.notice {
+/* speech bubble */
+.text__js {
   position: absolute;
-  top: 20%;
-  left: 50%;
+  top: 10%;
+  left: 7%;
+}
+
+.text__api {
+  position: absolute;
+  top: 51.5%;
+  left: 55%;
+}
+
+.text__security {
+  position: absolute;
+  top: 39%;
+  left: 11.7%;
+}
+
+.text__git {
+  position: absolute;
+  top: 0%;
+  right: 29.6%;
+}
+
+.text__react {
+  position: absolute;
+  top: 24%;
+  right: 29%;
 }

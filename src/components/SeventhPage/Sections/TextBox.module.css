@@ -1,0 +1,31 @@
+@value makerBlack from  '../../../common/colors.css';
+@value makerWhite from  '../../../common/colors.css';
+@value makerDeepBlue from  '../../../common/colors.css';
+@value Kopub_Light from  '../../../common/fonts.css';
+@value Gotham_Bold from  '../../../common/fonts.css';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: makerBlack;
+  opacity: 0.6;
+  padding-left: 1rem;
+}
+
+.quotes {
+  font-family: Gotham_Bold;
+  font-size: 2rem;
+  color: makerDeepBlue;
+}
+
+.text {
+  font-family: Kopub_Light;
+  color: makerWhite;
+}
+
+.name {
+  font-family: Kopub_Light;
+  color: makerWhite;
+}

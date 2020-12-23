@@ -1,0 +1,206 @@
+@value makerWhite from  '../../../../common/colors.css';
+@value makerBlack from  '../../../../common/colors.css';
+@value Yoon_Gothic_760 from  '../../../../common/fonts.css';
+@value Yoon_Gothic_790 from  '../../../../common/fonts.css';
+@value Noto_Sans_KR from  '../../../../common/fonts.css';
+
+.containerBox {
+  position: relative;
+  width: 8.876rem;
+  height: 16.3rem;
+  left: 50%;
+}
+
+.leftBubble {
+  position: relative;
+  background-color: makerWhite;
+  /* box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3); */
+  display: inline-block;
+  vertical-align: top;
+  border: solid #000;
+  border-width: 0.19rem 0.19rem 0.19rem 0.629rem;
+  margin: 14% 14%;
+  width: 100%;
+  height: 100%;
+  transform: rotate(-90deg);
+}
+
+.rightBubble {
+  position: relative;
+  background-color: makerWhite;
+  /* box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3); */
+  display: inline-block;
+  vertical-align: top;
+  border: solid #000;
+  border-width: 0.19rem 0.19rem 0.19rem 0.629rem;
+  margin: 14% 14%;
+  width: 100%;
+  height: 100%;
+  transform: rotate(-90deg) scale(1, -1);
+}
+
+.leftBubble.arrow::before,
+.leftBubble.arrow::after,
+.rightBubble.arrow::before,
+.rightBubble.arrow::after {
+  position: absolute;
+  background-color: makerWhite;
+  content: "\00a0";
+  display: block;
+  height: 6%;
+  width: 18.5%;
+  left: 15.5%;
+  bottom: -2.9%;
+  transform: rotate(-45deg) skew(-45deg);
+}
+
+.leftBubble.arrow::before,
+.rightBubble.arrow::before {
+  background-color: makerBlack;
+  /* box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3); */
+  left: 11.5%;
+  width: 15%;
+}
+
+.leftBubble.arrow::after,
+.rightBubble.arrow::after {
+  bottom: -2.4%;
+  border: solid #000;
+  border-width: 0 0.242rem 0.19rem 0.242rem;
+}
+
+.leftBubble > .content,
+.rightBubble > .content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: makerWhite;
+  z-index: 1;
+}
+
+.leftBubble .content__box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 200%;
+  height: 50%;
+  transform: rotate(90deg);
+  word-break: break-all;
+}
+
+.rightBubble .content__box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 200%;
+  height: 50%;
+  transform: rotate(90deg) scale(-1, 1);
+}
+
+.content__text {
+  text-align: start;
+  font-family: Yoon_Gothic_760;
+  font-size: 0.68rem;
+  word-break: break-word;
+  margin-bottom: 1%;
+  line-height: 160%;
+}
+
+.content__title {
+  font-family: Yoon_Gothic_790;
+  font-size: 0.674rem;
+}
+
+/* javascript */
+.text__js {
+  width: 8.927rem;
+  height: 21rem;
+}
+
+.text__js .content__box {
+  position: relative;
+  top: 20.2%;
+  right: 50%;
+}
+
+/* api */
+.text__api {
+  width: 8.927rem;
+  height: 21rem;
+}
+
+.text__api .content__box {
+  position: relative;
+  top: 30%;
+  right: 50%;
+}
+
+.text__api .arrow::before {
+  left: 73%;
+}
+
+.text__api .arrow::after {
+  left: 77%;
+}
+
+/* git */
+.text__git {
+  width: 9.742rem;
+  height: 18rem;
+}
+
+.text__git .content__box {
+  position: relative;
+  top: 17.5%;
+  right: 50%;
+}
+
+.text__git .arrow::before {
+  left: 55%;
+}
+
+.text__git .arrow::after {
+  left: 59%;
+}
+
+/* security */
+.text__react {
+  width: 8.927rem;
+  height: 21.5rem;
+}
+
+.text__react .content__box {
+  position: relative;
+  top: 19%;
+  right: 50%;
+}
+
+.text__react .arrow::before {
+  left: 45.5%;
+}
+
+.text__react .arrow::after {
+  left: 49%;
+}
+
+/* security */
+.text__security {
+  width: 9.742rem;
+  height: 20.931rem;
+}
+
+.text__security .content__box {
+  position: relative;
+  top: 25%;
+  right: 50%;
+}
+
+.text__security .arrow::before {
+  left: 55%;
+}
+
+.text__security .arrow::after {
+  left: 59%;
+}

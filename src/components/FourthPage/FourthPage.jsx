@@ -1,38 +1,27 @@
 import React from "react";
-import { datas } from "./datas";
-import styles from "./FourthPage.module.css";
-
+import Background from "./Sections/Background/Background";
 import TextBox from "./Sections/TextBox/TextBox";
-import Logo from "./Sections/Logo/Logo";
-
 import TopMenu from "../../utils/TopMenu/TopMenu";
 import Scroll from "../../utils/Scroll/Scroll";
 import BottomMenu from "../../utils/BottomMenu/BottomMenu";
+import styles from "./FourthPage.module.css";
+import { cards } from "./data";
 
 const FourthPage = () => {
-  const renderTextBox = () => {
-    return datas.map((data) => (
-      <div className={styles[data.id]} key={data.id}>
-        <TextBox {...data} />
+  const renderCard = () =>
+    cards.map((card, index) => (
+      <div key={index} className={styles[card.id]}>
+        <TextBox {...card} />
       </div>
     ));
-  };
-
-  const renderLogo = () => {
-    return datas.map((data) => (
-      <div className={styles[data.image]} key={data.id}>
-        <Logo name={data.image} />
-      </div>
-    ));
-  };
 
   return (
     <div className={styles.container}>
-      <div className={styles.d}>D</div>
-      <div className={styles.title}>DEPTH</div>
-      <div className={styles.sub}>개발을 깊이 있게</div>
-      {renderTextBox()}
-      {renderLogo()}
+      <Background />
+
+      <span className={styles.w}>w</span>
+      <div className={styles.sub}>WIDTH / 개발을 폭넓게</div>
+      <div>{renderCard()}</div>
 
       <TopMenu />
       <Scroll />

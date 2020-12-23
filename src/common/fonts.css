@@ -49,6 +49,16 @@
   src: url("../fonts/YoonGothic790.ttf");
 }
 
+@font-face {
+  font-family: Noto_Sans_CJK_Bold;
+  src: url("../fonts/Noto_Sans_CJK_Bold.otf");
+}
+
+@font-face {
+  font-family: Noto_Sans_CJK_Black;
+  src: url("../fonts/Noto_Sans_CJK_Bold.otf");
+}
+
 @value Gotham_Ultra: Gotham_Ultra;
 @value Gotham_Bold: Gotham_Bold;
 @value Gotham_Medium: Gotham_Medium;
@@ -57,6 +67,8 @@
 @value Kopub_Light: Kopub_Light;
 @value Kopub_Medium: Kopub_Medium;
 @value Noto_Sans_KR: 'Noto Sans KR', sans-serif;
+@value Noto_Sans_CJK_Bold: Noto_Sans_CJK_Bold;
+@value Noto_Sans_CJK_Black: Noto_Sans_CJK_Black;
 @value Yoon_Gothic_760: Yoon_Gothic_760;
 @value Yoon_Gothic_780: Yoon_Gothic_780;
 @value Yoon_Gothic_790: Yoon_Gothic_790;

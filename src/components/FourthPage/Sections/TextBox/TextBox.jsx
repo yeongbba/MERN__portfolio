@@ -1,19 +1,16 @@
 import React from "react";
 import styles from "./TextBox.module.css";
 
-const TextBox = ({ direction, text, title, id }) => {
+function TextBox({ title1, title2, text }) {
   return (
-    <div className={`${styles.containerBox} ${styles[id]}`}>
-      <div className={`${styles[direction]} ${styles.arrow}`}>
-        <div className={styles.content}>
-          <div className={styles.content__box}>
-            <pre className={styles.content__text}>{text}</pre>
-            <span className={styles.content__title}>{title}</span>
-          </div>
-        </div>
+    <div className={styles.container}>
+      <div className={styles.titleBox}>
+        <span className={styles.title1}>{title1}</span>
+        <span className={styles.title2}>{title2}</span>
       </div>
+      <div className={styles.text}>{text}</div>
     </div>
   );
-};
+}
 
 export default TextBox;

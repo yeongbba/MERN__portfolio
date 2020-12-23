@@ -1,87 +1,40 @@
-@value makerDeepBlue from  '../../common/colors.css';
 @value makerWhite from  '../../common/colors.css';
 @value makerBlack from  '../../common/colors.css';
-@value Gotham_Bold from  '../../common/fonts.css';
-@value Noto_Sans_KR from  '../../common/fonts.css';
 
 .container {
   width: 100vw;
   height: 100vh;
   min-width: 1160px;
   min-height: 550px;
-  background-color: makerDeepBlue;
-  position: relative;
+  background-color: makerBlack;
 }
 
-.typescript {
-  height: 8.069rem;
-  width: 20.334rem;
-  top: 20.7%;
-  left: 6.25%;
-  position: absolute;
-  border: 0.031rem solid makerBlack;
-  background-color: makerWhite;
-}
-
-.git {
-  height: 8.069rem;
-  width: 17.736rem;
-  position: absolute;
-  top: 14.7%;
-  right: 9.25%;
-  border: 0.031rem solid makerBlack;
-}
-
-.graphql {
-  height: 8.069rem;
-  width: 16.924rem;
-  position: absolute;
-  bottom: 23.35%;
-  right: 7%;
-  border: 0.031rem solid makerBlack;
-}
-
-.jest {
-  height: 8.069rem;
-  width: 24.231rem;
-  position: absolute;
-  bottom: 23.35%;
-  left: 3%;
-  border: 0.031rem solid makerBlack;
-}
-
-/* .title {
-  top: 0%;
-  left: 0%;
+.content {
   width: 100%;
   height: 100%;
-  position: absolute;
-  justify-content: center;
+  display: flex;
   align-items: center;
-} */
-
-.w {
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: inline-block;
-  font-family: Gotham_Bold;
-  font-size: 26.788rem;
-  position: absolute;
+  justify-content: center;
+  color: makerWhite;
 }
 
-.sub {
-  width: 8.637rem;
-  height: 1.544rem;
+.content__text {
+  width: 30rem;
+  height: 10rem;
+  position: relative;
+  left: 5%;
+  bottom: 2%;
   display: flex;
-  top: 58%;
-  left: 50%;
-  transform: translateX(-50%);
-  justify-content: center;
   align-items: center;
-  font-family: Noto_Sans_KR;
-  font-size: 0.762rem;
-  font-weight: 900;
-  background-color: makerWhite;
-  position: absolute;
+  justify-content: center;
+}
+
+.name {
+  color: makerWhite;
+  font-family: Gotham_Ultra;
+  font-size: 9.5rem;
+  letter-spacing: -1.5rem;
+  margin-right: 2rem;
+  position: relative;
+  bottom: 0.5%;
 }

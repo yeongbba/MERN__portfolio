@@ -1,0 +1,56 @@
+@value makerBlack from  '../../common/colors.css';
+@value makerWhite from  '../../common/colors.css';
+@value makerDeepBlue from  '../../common/colors.css';
+@value Noto_Sans_KR from  '../../common/fonts.css';
+@value Kopub_Light from  '../../common/fonts.css';
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../../images/seventh_bg.png");
+  background-size: cover;
+  position: relative;
+}
+
+.background {
+  width: 100%;
+  height: 100%;
+  background-color: makerBlack;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.6;
+}
+
+.title {
+  position: absolute;
+  top: 12%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.title__main {
+  font-family: Noto_Sans_KR;
+  font-weight: 900;
+  font-size: 1.1rem;
+  color: makerDeepBlue;
+}
+
+.title__question {
+  font-family: Kopub_Light;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: 0.7rem;
+  color: makerWhite;
+}
+
+.text {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+}
