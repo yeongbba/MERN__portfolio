@@ -1,16 +1,16 @@
-@value Noto_Sans_KR from  '../../../../common/fonts.css';
+@value Multi_Colore from  '../../../../common/fonts.css';
 
 .container {
-  width: 27rem;
+  width: 31rem;
   height: 27rem;
-  padding-left: 1rem;
+  padding-left: 0.1rem;
   padding-top: 0.9rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  font-family: Noto_Sans_KR;
-  font-weight: 500;
+  font-family: Multi_Colore;
+  font-weight: 600;
   border: 0.1rem solid white;
 }
 

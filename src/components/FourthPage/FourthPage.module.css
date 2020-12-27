@@ -14,7 +14,7 @@
 }
 
 .typescript {
-  height: 8.069rem;
+  height: 8.2rem;
   width: 20.334rem;
   top: 20.7%;
   left: 6.25%;
@@ -23,30 +23,30 @@
   background-color: makerWhite;
 }
 
-.git {
-  height: 8.069rem;
+.tailwind {
+  height: 8.2rem;
   width: 17.736rem;
   position: absolute;
-  top: 14.7%;
+  top: 10.81%;
   right: 9.25%;
   border: 0.031rem solid makerBlack;
 }
 
 .graphql {
-  height: 8.069rem;
-  width: 16.924rem;
+  height: 8.2rem;
+  width: 20.5rem;
   position: absolute;
-  bottom: 23.35%;
+  bottom: 20.55%;
   right: 7%;
   border: 0.031rem solid makerBlack;
 }
 
 .jest {
-  height: 8.069rem;
-  width: 24.231rem;
+  height: 8.2rem;
+  width: 25rem;
   position: absolute;
-  bottom: 23.35%;
-  left: 3%;
+  bottom: 20.55%;
+  left: 2.5%;
   border: 0.031rem solid makerBlack;
 }
 

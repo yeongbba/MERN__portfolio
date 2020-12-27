@@ -18,13 +18,14 @@ const TestCode = () => {
         expect&#40;frontend&#41;.toBe&#40;"React"&#41;;
       </span>
       <span className={styles.end}>
-        expect&#40;Backend&#41;.toBe&#40;&#91;"Express", "Docker"&#93;&#41;;
+        expect&#40;Backend&#41;.toEqual&#40;&#91;"Express", "AWS",
+        "Docker"&#93;&#41;;
       </span>
       <span className={styles.end}>
-        expect&#40;Database&#41;.toBe&#40;&#91;"Mysql", "MongoDB"&#93;&#41;;
+        expect&#40;Database&#41;.toEqual&#40;&#91;"Mysql", "MongoDB"&#93;&#41;;
       </span>
       <span className={styles.end}>
-        expect&#40;StateManagement&#41;.toBe&#40;&#91;"Redux",
+        expect&#40;StateManagement&#41;.toEqual&#40;&#91;"Redux",
         "Graphql"&#93;&#41;;
       </span>
       <span className={styles.middle}>&#125;&#41;;</span>
@@ -33,10 +34,10 @@ const TestCode = () => {
         it&#40;"Role in the two group projects", &#40;&#41; => &#123;
       </span>
       <span className={styles.end}>
-        expect&#40;projectName.role&#41;.toBe&#40;"blahblahblah"&#41;;
+        expect&#40;Scraper.role&#41;.toBe&#40;"Frontend"&#41;;
       </span>
       <span className={styles.end}>
-        expect&#40;projectName.role&#41;.toBe&#40;"blahblahblah"&#41;;
+        expect&#40;projectName.role&#41;.toBe&#40;"Backend"&#41;;
       </span>
       <span className={styles.middle}>&#125;&#41;;</span>
 

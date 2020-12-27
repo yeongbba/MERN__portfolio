@@ -34,10 +34,25 @@
   bottom: 3%;
 }
 
-.text {
+.textBox {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  bottom: 3%;
+}
+
+.text1 {
+  font-family: Kopub_Medium;
+  font-size: 0.719rem;
+  font-weight: 400;
+  color: makerBlack;
+  padding-left: 1.2rem;
+  text-align: start;
+}
+
+.text2 {
   font-family: Kopub_Medium;
   font-size: 0.719rem;
   color: makerBlack;
-  position: relative;
-  bottom: 3%;
+  padding-left: 1.1rem;
 }

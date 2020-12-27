@@ -59,6 +59,11 @@
   src: url("../fonts/Noto_Sans_CJK_Bold.otf");
 }
 
+@font-face {
+  font-family: Chaparral_Pro_Regular;
+  src: url("../fonts/Chaparral_Pro_Regular.ttf");
+}
+
 @value Gotham_Ultra: Gotham_Ultra;
 @value Gotham_Bold: Gotham_Bold;
 @value Gotham_Medium: Gotham_Medium;
@@ -72,3 +77,4 @@
 @value Yoon_Gothic_760: Yoon_Gothic_760;
 @value Yoon_Gothic_780: Yoon_Gothic_780;
 @value Yoon_Gothic_790: Yoon_Gothic_790;
+@value Chaparral_Pro_Regular: Chaparral_Pro_Regular;
