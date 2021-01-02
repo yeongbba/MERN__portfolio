@@ -28,6 +28,8 @@ const FifthPage = () => {
 
   return (
     <div className={styles.container}>
+      <div className={styles.banner}>BUILD A SOLID FOUNDATION</div>
+      <div className={styles.text}>흔들리지 않는 베이스</div>
       <div className={styles.d}>D</div>
       <div className={styles.title}>DEPTH</div>
       <div className={styles.sub}>개발을 깊이 있게</div>

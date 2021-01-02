@@ -20,6 +20,34 @@
   overflow: hidden;
 }
 
+.banner {
+  position: absolute;
+  font-family: Noto_Sans_KR;
+  font-weight: 900;
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 7.8%;
+  left: 10%;
+  width: 13rem;
+  height: 1.6rem;
+  color: makerWhite;
+  background-color: makerBlack;
+  border-radius: 5px;
+}
+
+.text {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  top: 12%;
+  left: 10%;
+  font-family: Noto_Sans_CJK_Bold;
+  font-size: 1.8rem;
+}
+
 .d {
   top: 50%;
   left: 50%;
